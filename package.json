@@ -1,10 +1,10 @@
 {
   "name": "tiidadavena",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Jules (@tiidadavena)'s business card",
   "main": "./bin/card.js",
   "bin": {
-    "natterstefan": "./bin/card.js"
+    "tiidadavena": "./bin/card.js"
   },
   "repository": {
     "type": "git",
