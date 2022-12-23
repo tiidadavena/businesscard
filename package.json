@@ -1,6 +1,6 @@
 {
   "name": "tiidadavena",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Jules (@tiidadavena)'s business card",
   "main": "./bin/card.js",
   "bin": {
