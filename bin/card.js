@@ -18,6 +18,8 @@ const data = {
   handle: chalk.magenta("Jules"),
   labelWork: chalk.white.bold("      Work:"),
   work: chalk.white("Software developer in progress"),
+  labelMastodon: chalk.white.bold("   Mastodon:"),
+  mastodon: chalk.magenta("@jules@notacult.social"),
   labelTwitter: chalk.white.bold("   Twitter:"),
   twitter: chalk.magenta("https://twitter.com/tiidadavena"),
   labelGitHub: chalk.white.bold("    GitHub:"),
@@ -35,6 +37,7 @@ console.log(data.name);
 const newline = "\n";
 const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
+const mastodoning = `${data.labelMastodon}  ${data.mastodon}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
@@ -48,6 +51,8 @@ const output =
   newline +
   newline +
   working +
+  newline +
+  mastodoning +
   newline +
   twittering +
   newline +
