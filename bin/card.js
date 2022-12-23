@@ -2,43 +2,44 @@
 // 👆 Used to tell Node.js that this is a CLI tool
 
 // Pull in our modules
-const chalk = require('chalk')
-const boxen = require('boxen')
+const chalk = require("chalk");
+const boxen = require("boxen");
 
 // Define options for Boxen
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round',
-}
+  borderStyle: "round",
+};
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Stefan Natter'),
-  handle: chalk.cyan('@natterstefan'),
-  labelWork: chalk.white.bold('      Work:'),
-  work: chalk.white('CEO and Co-Founder of marqant digital'),
-  labelTwitter: chalk.white.bold('   Twitter:'),
-  twitter: chalk.cyan('https://twitter.com/natterstefan'),
-  labelGitHub: chalk.white.bold('    GitHub:'),
-  github: chalk.cyan('https://github.com/natterstefan'),
-  labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  linkedin: chalk.cyan('https://linkedin.com/in/natterstefan'),
-  labelWeb: chalk.white.bold('       Web:'),
-  web: chalk.cyan('https://natterstefan.com'),
-  labelCard: chalk.white.bold('      Card:'),
-  npx: chalk.white('npx natterstefan'),
-}
+  name: chalk.white("Juliana Barros Lima"),
+  handle: chalk.magenta("Jules"),
+  labelWork: chalk.white.bold("      Work:"),
+  work: chalk.white("Software developer in progress"),
+  labelTwitter: chalk.white.bold("   Twitter:"),
+  twitter: chalk.magenta("https://twitter.com/tiidadavena"),
+  labelGitHub: chalk.white.bold("    GitHub:"),
+  github: chalk.magenta("https://github.com/tiidadavena"),
+  labelLinkedIn: chalk.white.bold("  LinkedIn:"),
+  linkedin: chalk.magenta("https://linkedin.com/in/julianabarroslima"),
+  labelWeb: chalk.white.bold("       Web:"),
+  web: chalk.magenta("https://tiidadavena.github.io"),
+  labelCard: chalk.white.bold("      Card:"),
+  npx: chalk.cyan("npx tiidadavena"),
+};
 
+console.log(data.name);
 // Actual strings we're going to output
-const newline = '\n'
-const heading = `${data.name} / ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
-const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const webing = `${data.labelWeb}  ${data.web}`
-const carding = `${data.labelCard}  ${data.npx}`
+const newline = "\n";
+const heading = `${data.name} / ${data.handle}`;
+const working = `${data.labelWork}  ${data.work}`;
+const twittering = `${data.labelTwitter}  ${data.twitter}`;
+const githubing = `${data.labelGitHub}  ${data.github}`;
+const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
+const webing = `${data.labelWeb}  ${data.web}`;
+const carding = `${data.labelCard}  ${data.npx}`;
 
 // Put all our output together into a single variable so we can use boxen
 // effectively
@@ -57,6 +58,6 @@ const output =
   webing +
   newline +
   newline +
-  carding
+  carding;
 
-console.log(chalk.green(boxen(output, options)))
+console.log(chalk.yellowBright(boxen(output, options)));
